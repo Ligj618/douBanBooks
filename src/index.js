@@ -1,0 +1,11 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import './style/common.scss';
+import './style/reset.scss';
+import App from './App';
+import registerServiceWorker from './registerServiceWorker';
+import {BrowserRouter as Router} from "react-router-dom";
+// import 'antd-mobile/dist/antd-mobile.css';
+ReactDOM.render(<Router><App /></Router>, document.getElementById('root'));
+registerServiceWorker();

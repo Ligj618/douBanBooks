@@ -1,0 +1,29 @@
+@import '../../style/common.scss';
+.detailContainer{
+    width: 100%;
+    .detailbox{
+        h3{
+            text-align: left;
+            margin-left: 30/$sc+rem;
+            margin-top: 30/$sc+rem;
+        }
+        div.detaildesc{
+            margin-top: 15/$sc+rem;
+            display: flex;
+            justify-content: space-around;
+            .detailleft{
+                text-align: left;
+                width: 200/$sc+rem;
+                height: 145/$sc+rem;
+            }
+            .detailright{
+                width: 100/$sc+rem;
+                height: 145/$sc+rem;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+        }
+        }
+    }
+}

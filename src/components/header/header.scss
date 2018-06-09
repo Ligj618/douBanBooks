@@ -1,0 +1,40 @@
+@import '../../style/common.scss';
+#root{
+    .myHeader{
+        position: fixed;
+        top:0;
+        width: 100%;
+        background: #ccc;
+        border-bottom: 1px solid #f3f3f3;
+        align-items: center;
+        padding: 0 10/$sc+rem;
+        background: #fff;
+        height: 47/$sc+rem;
+        display: flex;
+        justify-content: space-around;
+        h1{
+            color: #00b600;
+            font-size: 24/$sc+rem;
+        }
+        ul li{
+            float: left;
+            font-size: 15/$sc+rem;
+            margin-left: 14/$sc+rem;
+        }
+        ul li:nth-child(1) a{
+            color:#2384E8;
+        }
+        ul li:nth-child(2) a{
+            color:#9F7860;
+        }
+        ul li:nth-child(3) a{
+            color:#E4A813;
+        }
+        ul li:nth-child(4) a{
+            color:#2AB8CC;
+        }
+        ul li:nth-child(5) a{
+            color:#2384E8;
+        }
+    }
+}
