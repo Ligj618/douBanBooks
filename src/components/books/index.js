@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import FetchJsonp from "fetch-jsonp";
+import Rating from '../../common/Rating'
 import './books.scss';
 class Books extends Component{
     constructor(props){
@@ -80,7 +81,7 @@ class Books extends Component{
                                 <a onClick={this.goDetail.bind(this,this.state.fictionType,item.id)}>
                                     <div className="img"><img src={item.cover.url} alt="books"/></div>
                                     <span className="title">{item.title}</span>
-                                    <div className="evaluate"><span>{item.rating.value}</span></div>
+                                    <div className="evaluate"><Rating  length={Math.floor(item.rating.value/item.rating.max/2*10)}></Rating><span>{item.rating.value}</span></div>
                                 </a>
                             </li>)
                         })
@@ -99,7 +100,7 @@ class Books extends Component{
                                 <a onClick={this.goDetail.bind(this,this.state.unfictionType,item.id)}>
                                     <div className="img"><img src={item.cover.url} alt="books"/></div>
                                     <span className="title">{item.title}</span>
-                                    <div className="evaluate"><span>{item.rating.value}</span></div>
+                                    <div className="evaluate"><Rating  length={Math.floor(item.rating.value/item.rating.max/2*10)}></Rating><span>{item.rating.value}</span></div>
                                 </a>
                             </li>)
                         })

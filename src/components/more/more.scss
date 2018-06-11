@@ -1,0 +1,16 @@
+@import '../../style/common.scss';
+.moreContainer{
+    .moreBox{
+        h3{
+            font-weight: normal;
+            .moreSpan{
+                color: #f5a623;
+                border: 1px solid #f5a623;
+                border-radius: 3/$sc+rem;
+                font-size: 12px;
+                position: relative;
+                top:-4/$sc+rem;
+            }
+        }
+    }
+}

@@ -1,6 +1,8 @@
 import React,{Component} from 'react';
 import FetchJsonp from "fetch-jsonp";
 import './detail.scss';
+import Rating from '../../common/Rating';
+
 class Detail extends Component{
     constructor(props){
         super(props);
@@ -48,7 +50,9 @@ class Detail extends Component{
                             <h3>{item.title}{item.id}</h3>
                             <div className="detaildesc">
                                 <div className="detailleft">
-                                    <p>{item.rating.value}<span>{item.rating.count}</span></p>
+                                    <p><Rating  length={Math.floor(item.rating.value/item.rating.max/2*10)}></Rating>
+                                    {item.rating.value}&nbsp;&nbsp;&nbsp;
+                                    <span>{item.rating.count}人评价</span></p>
                                     <p>{item.author}/{item.press}/{item.price}/{item.year}</p>
                                 </div>
                                 <div className="detailright">

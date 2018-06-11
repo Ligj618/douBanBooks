@@ -15,6 +15,11 @@
                 text-align: left;
                 width: 200/$sc+rem;
                 height: 145/$sc+rem;
+                p{
+                    span{
+                        color:#aaa;
+                    }
+                }
             }
             .detailright{
                 width: 100/$sc+rem;
